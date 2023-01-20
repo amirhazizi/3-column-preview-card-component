@@ -1,5 +1,8 @@
 @import "./utils/variables";
 @import "./utils/config";
+body {
+  background: $cl-lightgray;
+}
 .container {
   min-height: 100vh;
   margin: 0 auto;

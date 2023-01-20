@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: hsl(0deg, 0%, 95%);
+}
+
 .container {
   min-height: 100vh;
   margin: 0 auto;
@@ -73,18 +77,19 @@ a {
 }
 .card-circle {
   position: relative;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 100px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .card-circle .icon {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(50%, 10%);
+  width: 4rem;
+  height: 4rem;
+  transform: translate(0, 0);
   font-size: 2rem;
-  filter: brightness(160%);
   opacity: 0.95;
 }
 .card-text {
@@ -107,9 +112,6 @@ a {
   background: hsl(31deg, 77%, 52%);
   opacity: 0.95;
 }
-.card-1 .card-circle {
-  background: #905413;
-}
 .card-1 .card-circle .icon {
   color: hsl(31deg, 77%, 52%);
 }
@@ -117,9 +119,6 @@ a {
 .card-2 {
   background: hsl(184deg, 100%, 22%);
   opacity: 0.9;
-}
-.card-2 .card-circle {
-  background: hsl(179deg, 100%, 13%);
 }
 .card-2 .card-circle .icon {
   color: hsl(184deg, 100%, 22%);
@@ -130,9 +129,6 @@ a {
   border-bottom-right-radius: 10px;
   background: hsl(179deg, 100%, 13%);
   opacity: 0.95;
-}
-.card-3 .card-circle {
-  background: #002124;
 }
 .card-3 .card-circle .icon {
   color: hsl(184deg, 100%, 22%);
