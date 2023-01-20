@@ -1,5 +1,10 @@
 @use "../utils/variables";
 @use "../utils/config";
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  place-items: center;
+}
 .card {
   padding: 3.5rem 2.5rem;
   &-circle {
