@@ -102,6 +102,8 @@ a {
 }
 
 .card-1 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background: hsl(31deg, 77%, 52%);
   opacity: 0.95;
 }
@@ -124,6 +126,8 @@ a {
 }
 
 .card-3 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background: hsl(179deg, 100%, 13%);
   opacity: 0.95;
 }
@@ -140,6 +144,16 @@ a {
   }
   .card-text {
     margin-bottom: 6rem;
+  }
+  .card-1 {
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .card-3 {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }
 *,

@@ -2,10 +2,9 @@
 @use "../utils/config";
 %btn {
   display: inline-block;
-
   background: white;
   padding: 0.8rem 1.8rem;
-  border-radius: 100px;
+  border-radius: $radius * 10;
   transition: all 100ms linear;
   border: 2px solid white;
   &:hover {
