@@ -1,0 +1,72 @@
+@use "../utils/variables";
+@use "../utils/config";
+.card {
+  padding: 3.5rem 2.5rem;
+  &-circle {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+    .icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, 10%);
+      font-size: 2rem;
+      filter: brightness(160%);
+      opacity: 0.95;
+    }
+  }
+  &-text {
+    margin-bottom: 2rem;
+    h1 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      color: $cl-transparentwhite;
+      line-height: 1.75;
+    }
+  }
+}
+.card-1 {
+  background: $cl-Borange;
+  opacity: 0.95;
+  .card-circle {
+    background: darken($cl-Borange, 20);
+    .icon {
+      color: $cl-Borange;
+    }
+  }
+}
+.card-2 {
+  background: $cl-darkcyan;
+  opacity: 0.9;
+  .card-circle {
+    background: $cl-darkcyan-2;
+    .icon {
+      color: $cl-darkcyan;
+    }
+  }
+}
+.card-3 {
+  background: $cl-darkcyan-2;
+  opacity: 0.95;
+  .card-circle {
+    background: darken($cl-darkcyan, 15);
+    .icon {
+      color: $cl-darkcyan;
+    }
+  }
+}
+@media (min-width: 976px) {
+  .card {
+    padding: 3rem 3rem;
+    &-text {
+      margin-bottom: 6rem;
+    }
+  }
+}

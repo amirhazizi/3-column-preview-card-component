@@ -1,6 +1,5 @@
-@import "variables";
-@import "config";
-@import "btn";
+@import "./utils/variables";
+@import "./utils/config";
 .container {
   min-height: 100vh;
   margin: 0 auto;
@@ -12,72 +11,23 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   place-items: center;
 }
-.card {
-  padding: 3.5rem 2.5rem;
-  &-circle {
-    position: relative;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100px;
-    margin-bottom: 1.5rem;
-    .icon {
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(50%, 10%);
-      font-size: 2rem;
-      color: $cl-transparentwhite;
-    }
-  }
-  &-text {
-    margin-bottom: 2rem;
-    h1 {
-      color: white;
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-    }
-    p {
-      color: $cl-transparentwhite;
-      line-height: 1.75;
-    }
-  }
-}
-.card-1 {
-  background: $cl-Borange;
-  opacity: 0.95;
-  .card-circle {
-    background: darken($cl-Borange, 20);
-  }
-}
-.card-2 {
-  background: $cl-darkcyan;
-  opacity: 0.9;
-  .card-circle {
-    background: $cl-darkcyan-2;
-  }
-}
-.card-3 {
-  background: $cl-darkcyan-2;
-  opacity: 0.95;
-  .card-circle {
-    background: darken($cl-darkcyan, 15);
-  }
-}
+@import "./components/card";
+@import "./components/btn";
 
-@media (min-width: 976px) {
-  .card {
-    padding: 3rem 3rem;
-    &-text {
-      margin-bottom: 6rem;
-    }
-  }
-}
 // footer
 .attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   font-size: 11px;
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  background: $cl-darkcyan;
+  color: white;
+  padding: 0.1rem 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.505);
+  a {
+    color: darken($color: $cl-Borange, $amount: 50);
+    font-weight: bold;
+  }
 }

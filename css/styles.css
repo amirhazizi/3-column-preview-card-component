@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 *,
 ::before,
 ::after {
@@ -27,6 +28,120 @@ a {
   text-decoration: none;
 }
 
+.container {
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 4rem 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  place-items: center;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  padding: 3.5rem 2.5rem;
+}
+.card-circle {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100px;
+  margin-bottom: 1.5rem;
+}
+.card-circle .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, 10%);
+  font-size: 2rem;
+  filter: brightness(160%);
+  opacity: 0.95;
+}
+.card-text {
+  margin-bottom: 2rem;
+}
+.card-text h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.card-text p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 1.75;
+}
+
+.card-1 {
+  background: hsl(31deg, 77%, 52%);
+  opacity: 0.95;
+}
+.card-1 .card-circle {
+  background: #905413;
+}
+.card-1 .card-circle .icon {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.card-2 {
+  background: hsl(184deg, 100%, 22%);
+  opacity: 0.9;
+}
+.card-2 .card-circle {
+  background: hsl(179deg, 100%, 13%);
+}
+.card-2 .card-circle .icon {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.card-3 {
+  background: hsl(179deg, 100%, 13%);
+  opacity: 0.95;
+}
+.card-3 .card-circle {
+  background: #002124;
+}
+.card-3 .card-circle .icon {
+  color: hsl(184deg, 100%, 22%);
+}
+
+@media (min-width: 976px) {
+  .card {
+    padding: 3rem 3rem;
+  }
+  .card-text {
+    margin-bottom: 6rem;
+  }
+}
 *,
 ::before,
 ::after {
@@ -79,88 +194,19 @@ a {
   color: hsl(179deg, 100%, 13%);
 }
 
-.container {
-  min-height: 100vh;
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 4rem 2rem;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  place-items: center;
-}
-
-.card {
-  padding: 3.5rem 2.5rem;
-}
-.card-circle {
-  position: relative;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 100px;
-  margin-bottom: 1.5rem;
-}
-.card-circle .icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(50%, 10%);
-  font-size: 2rem;
-  color: hsla(0deg, 0%, 100%, 0.75);
-}
-.card-text {
-  margin-bottom: 2rem;
-}
-.card-text h1 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-.card-text p {
-  color: hsla(0deg, 0%, 100%, 0.75);
-  line-height: 1.75;
-}
-
-.card-1 {
-  background: hsl(31deg, 77%, 52%);
-  opacity: 0.95;
-}
-.card-1 .card-circle {
-  background: #905413;
-}
-
-.card-2 {
-  background: hsl(184deg, 100%, 22%);
-  opacity: 0.9;
-}
-.card-2 .card-circle {
-  background: hsl(179deg, 100%, 13%);
-}
-
-.card-3 {
-  background: hsl(179deg, 100%, 13%);
-  opacity: 0.95;
-}
-.card-3 .card-circle {
-  background: #002124;
-}
-
-@media (min-width: 976px) {
-  .card {
-    padding: 3rem 3rem;
-  }
-  .card-text {
-    margin-bottom: 6rem;
-  }
-}
 .attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   font-size: 11px;
   text-align: center;
+  background: hsl(184deg, 100%, 22%);
+  color: white;
+  padding: 0.1rem 1rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.505);
 }
-
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: #090501;
+  font-weight: bold;
 }

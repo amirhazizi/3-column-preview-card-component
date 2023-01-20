@@ -1,5 +1,5 @@
-@use "variables";
-@use "config";
+@use "../utils/variables";
+@use "../utils/config";
 %btn {
   display: inline-block;
 
