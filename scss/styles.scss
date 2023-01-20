@@ -17,12 +17,17 @@
   transform: translate(-50%, 0);
   font-size: 11px;
   text-align: center;
-  background: $cl-darkcyan;
+  background: darken($color: $cl-darkcyan, $amount: 10);
   color: white;
   padding: 0.1rem 1rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.505);
   a {
-    color: darken($color: $cl-Borange, $amount: 50);
+    // color: darken($color: $cl-darkcyan, $amount: 90);
+    color: rgb(83, 210, 210);
     font-weight: bold;
+    transition: all 300ms linear;
+    &:hover {
+      color: darken($color: aqua, $amount: 30);
+    }
   }
 }

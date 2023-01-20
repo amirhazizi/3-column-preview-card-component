@@ -201,12 +201,16 @@ a {
   transform: translate(-50%, 0);
   font-size: 11px;
   text-align: center;
-  background: hsl(184deg, 100%, 22%);
+  background: #00393d;
   color: white;
   padding: 0.1rem 1rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.505);
 }
 .attribution a {
-  color: #090501;
+  color: rgb(83, 210, 210);
   font-weight: bold;
+  transition: all 300ms linear;
+}
+.attribution a:hover {
+  color: #006666;
 }
